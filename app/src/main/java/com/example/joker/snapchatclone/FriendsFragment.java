@@ -55,7 +55,7 @@ public class FriendsFragment extends ListFragment {
 
         getActivity().setProgressBarIndeterminateVisibility(true);
 
-        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        ParseQuery<ParseUser> query = mFriendsRelation.getQuery();
         query.orderByAscending(ParseConstants.KEY_USERNAME);
 
         query.findInBackground(new FindCallback<ParseUser>() {
