@@ -101,7 +101,6 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
                 }
 
                 //2. Create our subdirectory
-                assert mediaStorageDir != null;
                 if (!mediaStorageDir.exists()){
                     if (!mediaStorageDir.mkdirs()){
                         Log.e(TAG, "Failed to create directory");
