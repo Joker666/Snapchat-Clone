@@ -35,4 +35,11 @@
         <item>Choose Video</item>
     </string-array>
 
+    <string name="title_activity_recipients">Choose Recipients</string>
+    <string name="empty_recipients_list_message">Choose Some Friends From The List</string>
+    <string name="menu_send_label">Send</string>
+    <string name="error_selecting_file">There was an error with the file selected, Please select a different file</string>
+    <string name="success_message">Messages sent!</string>
+    <string name="error_sending_message">There was an error sending your message. Please try again</string>
+
 </resources>
