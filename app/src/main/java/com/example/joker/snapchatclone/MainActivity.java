@@ -81,7 +81,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
 
                     Toast.makeText(MainActivity.this, getString(R.string.video_limit), Toast.LENGTH_LONG).show();
 
-                    startActivityForResult(chooseVideoIntent, PICK_PHOTO_REQUEST);
+                    startActivityForResult(chooseVideoIntent, PICK_VIDEO_REQUEST);
                     break;
             }
         }
@@ -256,7 +256,7 @@ public class MainActivity extends Activity implements ActionBar.TabListener {
             if (requestCode == PICK_PHOTO_REQUEST || requestCode == TAKE_PHOTO_REQUEST){
                 fileType = ParseConstants.TYPE_IMAGE;
             } else {
-                fileType = ParseConstants.TYPE_Video;
+                fileType = ParseConstants.TYPE_VIDEO;
             }
 
             recipientsIntent.putExtra(ParseConstants.KEY_FILE_TYPE, fileType);
