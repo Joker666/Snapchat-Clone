@@ -2,40 +2,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.joker.snapchatclone.LoginActivity">
+    tools:context="com.example.joker.snapchatclone.LoginActivity"
+    style="@style/AuthBackground">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/usernameField"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:hint="@string/username_hint"/>
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="@string/content_description_background"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/passwordField"
-        android:layout_below="@+id/usernameField"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:hint="@string/password_hint"/>
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubtitle" />
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        style="@style/AuthFieldContainer">
+        <EditText
+            android:id="@+id/usernameField"
+            android:hint="@string/username_hint"
+            style="@style/AuthEditText">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/passwordField"
+            android:hint="@string/password_hint"
+            style="@style/AuthEditText"/>
+
+    </LinearLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/login_button"
         android:id="@+id/loginButton"
-        android:layout_below="@+id/passwordField"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@id/editTextLayout"
+        style="@style/AuthButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,5 +51,7 @@
         android:id="@+id/signUpText"
         android:layout_below="@+id/loginButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp" />
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"/>
+
 </RelativeLayout>

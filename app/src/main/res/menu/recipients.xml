@@ -6,5 +6,5 @@
         android:orderInCategory="100"
         android:showAsAction="always"
         android:visible="false"
-        android:icon="@drawable/ic_action_social_send_now"/>
+        android:icon="@drawable/ic_action_send_now"/>
 </menu>

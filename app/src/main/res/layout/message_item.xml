@@ -12,7 +12,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/message_list_item_vertical_margin"
         android:paddingBottom="@dimen/message_list_item_vertical_margin"
-        android:src="@drawable/ic_action_content_picture" />
+        android:src="@drawable/ic_action_picture" />
 
     <TextView
         android:id="@+id/senderLabel"

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Snapchat Clone</string>
+    <string name="app_name">Snapchat</string>
     <string name="title_section1">Inbox</string>
     <string name="title_section2">Friends</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_logout_label">Logout</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="username_hint">username</string>
-    <string name="password_hint">*********</string>
-    <string name="login_button">Login</string>
-    <string name="sign_up_label">Sign Up</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">SIGN IN</string>
+    <string name="sign_up_label">Don\'t have an account? Sign Up!</string>
+    <string name="sign_up_button_label">SIGN UP</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
-    <string name="email_hint">abc@abc.com</string>
+    <string name="email_hint">Email</string>
     <string name="signup_error_message">Please make sure you enter a username, a password and an email address</string>
     <string name="error_title">Ooops!</string>
     <string name="login_error_message">Please make sure you enter a username, a password</string>
@@ -42,5 +43,8 @@
     <string name="success_message">Messages sent!</string>
     <string name="error_sending_message">There was an error sending your message. Please try again</string>
     <string name="title_activity_view_image">Snapchat Clone</string>
-
+    <string name="content_description_background">Snapchat Clone Background Image</string>
+    <string name="subtitle">Self Destructing Message</string>
+    <string name="cancel_button_label">CANCEL</string>
+    <string name="content_description_button_divider">Button Divider</string>
 </resources>
